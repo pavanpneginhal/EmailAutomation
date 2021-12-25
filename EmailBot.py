@@ -15,7 +15,7 @@ root.geometry('960x640')
 global toaddress
 
 def SendMail(ImgFileName, toad):
-    from_add = "pyprojmin@gmail.com"
+    from_add = "xxx"    #add your email id
     to = toad
     data = MIMEMultipart() 
     data['From'] = from_add
@@ -32,7 +32,7 @@ def SendMail(ImgFileName, toad):
     data.attach(p)  
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login(from_add, "1234554321AB!")
+    s.login(from_add, "abcd")   #instead of abcd, add the pw of your email
     text = data.as_string()
     s.sendmail(from_add, data["To"].split(","), text)
     messagebox.showinfo("showinfo", "Email Sent Successfully") 
@@ -43,7 +43,7 @@ def send():
   if to_address == "":
     messagebox.showerror("Error", "Please fill To_Addresses") 
   else:
-    SendMail('C:/Users/Pavan/Desktop/Email/kakashi1.jpg','C:/Users/Pavan/Desktop/Email/sasuke.jpg','C:/Users/Pavan/Desktop/Email/goku', to_address)
+    SendMail('C:/Users/Pavan/Desktop/Email/kakashi.jpg', to_address)
 
 frame = Frame(root)
 frame2 = Frame(frame)
