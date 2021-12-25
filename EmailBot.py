@@ -43,7 +43,7 @@ def send():
   if to_address == "":
     messagebox.showerror("Error", "Please fill To_Addresses") 
   else:
-    SendMail('C:/Users/Pavan/Desktop/Email/kakashi.jpg', to_address)
+    SendMail('xx:/xxx/kakashi.jpg', to_address)   #save the image in some directory, and add the path instead of xxx
 
 frame = Frame(root)
 frame2 = Frame(frame)
