@@ -51,7 +51,7 @@ font1 = font.Font(family='Verdana', size=40, weight='bold')
 font2 = font.Font(family='Verdana', size=15)
 font3 = font.Font(family='Verdana', size=15, weight='bold')
 font4 = font.Font(family='Verdana', size=13)
-photo = PhotoImage(file="C:\\Users\\Pavan\\Desktop\\Email\\1.png")
+photo = PhotoImage(file="xx:/xxx/1.png")     #save the image in the specific directory and add the path
 Label(frame, image=photo).pack(pady=15)
 Label(frame, font=font1, text="Email Automation Tool").pack()
 Label(frame, font=font2, text="Welcome to Email Automation Tool").pack(pady=20)
